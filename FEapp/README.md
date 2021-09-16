@@ -24,6 +24,7 @@ code editor. You need to acceed to application folder and then
 initiate it. To do that, you need to execute the following commands
 
 > cd FEapp
+
 > npm install
 
 that's it !
