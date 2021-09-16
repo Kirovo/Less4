@@ -1,0 +1,15 @@
+<div *ngIf="cartList.length!=0">
+    <div class="container" *ngFor="let product of cartList">
+    <img [src]="product.url">
+        <div>
+            <button class="delete-item" (click)=deleteItem(product)>X</button>
+            <div style="margin-top: auto;margin-bottom: auto;">
+            <div style="font-size: x-large;">{{product.name}}</div>
+            <div>{{product.price}}$</div>
+            <div>Amount : {{product.amount}}</div>
+            </div>
+        </div>
+    </div>
+    <p class="total">Total: {{total}}$</p>
+    <button type="reset" (click)=resetCart()>ResetCart</button>
+</div>

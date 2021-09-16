@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    border: 3px solid #7f5539;
+    padding: 10px;
+    margin: 10px;
+    background-color: #dda15e;
+    border-radius: 10%;
+}
+
+
+.delete-item {
+    margin-left: 100px;
+    border-radius: 50%;
+    height:40px;
+    width: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: firebrick;
+}
+
+
+img {
+    height: 200px;
+    margin-right: 30px;
+}
+
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-size: x-large;
+    color: #e2ba4c;
+}

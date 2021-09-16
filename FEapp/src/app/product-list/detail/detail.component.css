@@ -1,0 +1,30 @@
+p {
+    margin: 20px 0;
+}
+
+
+img {
+    width: 300px;
+    margin-right: 50px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+.amount-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+}
+
+
+.amount {
+    font-size: x-large;
+    margin:auto 10px;
+
+}

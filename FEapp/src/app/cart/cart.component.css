@@ -1,0 +1,12 @@
+.column{
+    display: flex ;
+    justify-content: center;
+
+}
+.thumbnail{
+    border: 4px solid #7f5539;
+    background-color: #7f5539;
+}
+.marge{
+    margin: 50px;
+}

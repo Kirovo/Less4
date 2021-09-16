@@ -1,0 +1,17 @@
+<h3>Checkout</h3>
+
+<form #form="ngForm" (ngSubmit)="submitForm()">
+  <label>Full name : </label>
+  <br>
+  <input type="text" name="fullName" required minlength="8" placeholder="Enter your full name" [(ngModel)]="fullName">
+  <br>
+  <label>Address : </label>
+  <br>
+  <input type="text" name="address" required minlength="4" placeholder="Enter your address" [(ngModel)]="address">
+  <br>
+  <label>Credit card number : </label>
+  <br>
+  <input type="text" name="cardNum" required pattern="[0-9]{16}" placeholder="Ex: 1234 5678 9012 3456" [(ngModel)]="cardNum">
+  <br>
+  <button type="submit" [disabled]="form.invalid" (click)="submitForm()" routerLink="/success">Submit</button>
+</form>
