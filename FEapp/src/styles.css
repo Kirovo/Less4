@@ -1,0 +1,36 @@
+img{
+    border-radius: 10%;
+}
+
+h1{
+    font-size:50px;
+    color:#ede0d4;
+}
+a{
+    color:#dda15e;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size:larger;
+}
+*{
+    font-family: fantasy ;
+    /* color: ; */
+    font-weight: lighter;
+}
+button{
+    border:none;
+    color:white;
+    padding: 10px;
+    background-color: #7f5539;
+    font-size: large;
+}
+p{
+    margin: 0%;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}

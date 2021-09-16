@@ -1,0 +1,17 @@
+h3{
+    font-size: xx-large;
+    color: #7f5539;
+}
+
+
+label{
+    font-size: large;
+}
+
+
+input{
+    width: 300px;
+    height: 25px;
+    font-size: large;
+    margin-bottom: 10px;
+}
