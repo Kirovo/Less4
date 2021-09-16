@@ -17,7 +17,7 @@ The workspace include several actions required to review the work:
 -Read the code
 
 
-# Scaffold the application:
+# Scaffold the application
 
 After pulling the repository of the project and openning it on your 
 code editor. You need to acceed to application folder and then
