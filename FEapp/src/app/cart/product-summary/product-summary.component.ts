@@ -7,16 +7,13 @@ import { Product } from '../../models/Product';
   styleUrls: ['./product-summary.component.css']
 })
 export class ProductSummaryComponent implements OnInit {
-  cartList:Product[];
+  cartList:Product[]=[];
   total:number=0;
 
-  constructor(private cart: ProductReceiverService) {
-    
-    this.cartList=cart.subOrder
-    console.log(this.cartList)
-   }
+  constructor(private cart: ProductReceiverService) {}
 
   ngOnInit(): void {  
+    this.cartList=this.cart.subOrder
     this.calculateTotal()
   }
   calculateTotal(){

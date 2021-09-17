@@ -17,19 +17,20 @@ export class DetailComponent implements OnInit {
 		description:'',
 		amount : 0
 		}
+  amountIdle:number=1;
   constructor(private detail: ProductShowService, private getter:ProductReceiverService) { }
 
   ngOnInit(): void {
     this.product = this.detail.selection
   }
   addToCart():void{
-    this.getter.addToCart(this.product)
+    this.getter.addToCart(this.product, this.amountIdle)
   }
-  addProducts(product:Product):void{
-    product.amount++
+  addProducts():void{
+    this.amountIdle++;
   }
-  removeProducts(product:Product):void{
-    product.amount--
+  removeProducts():void{
+    this.amountIdle--
   }
   type(){
     if (this.detail.selection.id == undefined)
@@ -38,7 +39,7 @@ export class DetailComponent implements OnInit {
     return false
   }
   disabled():boolean{
-    if (this.product.amount == 1) {
+    if (this.amountIdle <= 1) {
       return true
     } else {
       return false

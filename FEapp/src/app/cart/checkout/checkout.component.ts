@@ -18,7 +18,6 @@ export class CheckoutComponent implements OnInit {
   }
   submitForm():void{
     this.getter.getName(this.fullName)
-    console.log(this.fullName)
     this.fullName='';
     this.cardNum='';
     this.address='';
