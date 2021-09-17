@@ -3,21 +3,21 @@
 <form #form="ngForm" (ngSubmit)="submitForm()">
   <label>Full name : </label>
   <br>
-  <input type="text" name="fullName" required minlength="8" placeholder="Enter your full name" [(ngModel)]="fullName">
+  <input type="text" name="fullName" required minlength="8" placeholder="Enter your full name" [(ngModel)]="fullName" (ngModelChange)="untilGood($event)">
   <br>
-  <div [hidden]="form.valid" style="color: red;">the Full name field must be at least 8 character long</div>
+  <div [hidden]="good" style="color: red;">the full name field must be at least 8 character long</div>
   <br>
   <label>Address : </label>
   <br>
-  <input type="text" name="address" required minlength="4" placeholder="Enter your address" [(ngModel)]="address">
+  <input type="text" name="address" required minlength="4" placeholder="Enter your address" [(ngModel)]="address" (ngModelChange)="untilGood2($event)">
   <br>
-  <div [hidden]="form.valid" style="color: red;">the Adress field must be at least 4 character long</div>
+  <div [hidden]="good2" style="color: red;">the Adress field must be at least 4 character long</div>
   <br>
   <label>Credit card number : </label>
   <br>
-  <input type="text" name="cardNum" required pattern="[0-9]{16}" placeholder="Ex: 1234 5678 9012 3456" [(ngModel)]="cardNum">
+  <input type="text" name="cardNum" required pattern="[0-9]{16}" placeholder="Ex: 1234 5678 9012 3456" [(ngModel)]="cardNum" (ngModelChange)="untilGood3($event)">
   <br>
-  <div [hidden]="form.valid" style="color: red;">the card number field must be written with 16 numbers</div>
+  <div [hidden]="good3" style="color: red;">the card number field must be written with 16 numbers</div>
   <br>
   <button type="submit" [disabled]="form.invalid" (click)="submitForm()" routerLink="/success">Submit</button>
 </form>
