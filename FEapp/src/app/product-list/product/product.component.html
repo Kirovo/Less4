@@ -4,9 +4,9 @@
     <div style="font-size: x-large;">{{product.name}}</div>
     <div>{{product.price}}$</div>
     <div class="amount-nav">
-        <button [disabled]="disabled()" class="spacing" (click)="removeProducts(product)">-</button>
-        <div class="spacing amount">{{product.amount}}</div>
-        <button class="spacing" (click)="addProducts(product)">+</button>
+        <button [disabled]="disabled()" class="spacing" (click)="removeProducts()">-</button>
+        <div class="spacing amount">{{amountIdle}}</div>
+        <button class="spacing" (click)="addProducts()">+</button>
     </div>
     <button style="margin: 10px;" (click)="addToCart()">Add To Cart</button>
 </div>

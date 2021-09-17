@@ -5,9 +5,9 @@
         <p>{{product.price}}$</p>
         <p>{{product.description}}</p>
         <div class="amount-nav">
-            <button [disabled]="disabled()" class="spacing" (click)="removeProducts(product)">-</button>
-            <div class="spacing amount">{{product.amount}}</div>
-            <button class="spacing" (click)="addProducts(product)">+</button>
+            <button [disabled]="disabled()" class="spacing" (click)="removeProducts()">-</button>
+            <div class="spacing amount">{{amountIdle}}</div>
+            <button class="spacing" (click)="addProducts()">+</button>
         </div>
         <button style="margin-top: 20px;" (click)="addToCart()">Add To Cart</button>
     </div>
